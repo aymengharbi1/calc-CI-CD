@@ -32,3 +32,4 @@ jobs:
           file: ./sources/Dockerfile
           push: true
           tags: aymengharbi/calc-CI-CD:1.0.${{github.run_number}}
+#gfgfg
