@@ -6,6 +6,7 @@ class Test(unittest.TestCase):
     """
     Tests pour les fonctions de calc
     """
+    #this is first comment
 
     def test_add(self):
         """
