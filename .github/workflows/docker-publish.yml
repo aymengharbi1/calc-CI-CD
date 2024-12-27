@@ -40,4 +40,4 @@ jobs:
           context: ./sources
           file: ./sources/Dockerfile
           push: true
-          tags: aymengharbi/newrepo:1.0.${{ github.run_number }}
+          tags: aymengharbi/myrepo:1.0.${{ github.run_number }}
