@@ -33,7 +33,9 @@ def modulo(arg1,arg2):
     try:
         return int(arg1)%int(arg2)
     except ValueError:
-        print("Un des arguments n'est pas un entier")    
+        print("Un des arguments n'est pas un entier")
+    except ZeroDivisionError:
+        print("Modulo par 0 impossible.")
 
 def ope(operateur,arg1,arg2):   
     if operateur=='+':
