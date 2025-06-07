@@ -50,6 +50,12 @@ class Test(unittest.TestCase):
         """
         self.assertIsNone(calc.modulo(8, "da"))
 
+    def test_modulo_zero(self):
+        """
+        Un modulo par 0 ne doit rien retourner.
+        """
+        self.assertIsNone(calc.modulo("8", "0"))
+
     def test_sous_float(self):
         """
         La soustraction entre 2 float ne doit rien retourner.
@@ -72,7 +78,7 @@ class Test(unittest.TestCase):
         """
         La multiplication entre 2 float ne doit rien retourner.
         """
-        self.assertIsNone(calc.sous("0.5", "2.8"))
+        self.assertIsNone(calc.mult("0.5", "2.8"))
 
     def test_div(self):
         """
@@ -102,7 +108,7 @@ class Test(unittest.TestCase):
         """
         La soustraction entre 12 et 2 doit retourner 10.
         """
-        self.assertEqual(calc.sous("12", "2"), 10)
+        self.assertEqual(calc.ope("-", "12", "2"), 10)
 
     def test_ope_erreur(self):
         """
